@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 enum Status
 {
-    MEMMORY_ALLOCATION_ERROR = 666,
-    ARRAY_LENGTH_ZERO_ERROR = -67,
-    INPUT_ERROR = 1,
+    MEMMORY_ARRAY_A_ALLOCATION_ERROR = 666,
+    MEMMORY_ARRAY_B_ALLOCATION_ERROR = 667,
+    MEMMORYARRAY_C_ALLOCATION_ERROR = 668,
+    ARRAY_C_LENGTH_ZERO_ERROR = 69,
+    INPUT_ARRAY_A_ERROR = 1,
+    INPUT_ARRAY_B_ERROR = 2,
     OK = 0
 };
 
@@ -37,28 +41,34 @@ int main(int argc, char *argv[])
 
     printf("Enter size of 1st array: ");
     scanf("%d", &size_a);
-    printf("Enter size of 2nd array: ");
-    scanf("%d", &size_b);
-
-    int *a = (int *)malloc(sizeof(int) * size_a);
-    int *b = (int *)malloc(sizeof(int) * size_b);
-
-    if (size_a < 0 || size_b < 0)
+    if (size_a < 0)
     {
         puts("Incorrect input!!!");
-        return INPUT_ERROR;
+        return INPUT_ARRAY_A_ERROR;
     }
+
+    printf("Enter size of 2nd array: ");
+    scanf("%d", &size_b);
+    if (size_b < 0)
+    {
+        puts("Incorrect input!!!");
+        return INPUT_ARRAY_B_ERROR;
+    }
+
+    int *a = (int *)malloc(sizeof(int) * size_a);
 
     if (a == NULL)
     {
         puts("Out of memory!");
-        return MEMMORY_ALLOCATION_ERROR;
+        return MEMMORY_ARRAY_A_ALLOCATION_ERROR;
     }
+
+    int *b = (int *)malloc(sizeof(int) * size_b);
 
     if (b == NULL)
     {
         puts("Out of memory!");
-        return MEMMORY_ALLOCATION_ERROR;
+        return MEMMORY_ARRAY_B_ALLOCATION_ERROR;
     }
 
     fill_array(a, size_a);
@@ -72,19 +82,18 @@ int main(int argc, char *argv[])
     if (c == NULL)
     {
         puts("Out of memory!");
-        return MEMMORY_ALLOCATION_ERROR;
+        return MEMMORYARRAY_C_ALLOCATION_ERROR;
     }
 
     if (size_a == 0 && size_b == 0)
     {
         puts("Array length zero error!!!");
-        return ARRAY_LENGTH_ZERO_ERROR;
+        return ARRAY_C_LENGTH_ZERO_ERROR;
     }
 
     if (size_a > 0 && size_b == 0)
     {
-        for (int i = 0; i < size_a; i++)
-            c[i] = a[i];
+        memcpy(c, a, size_a * sizeof(int));
 
         output_array(c, size_a);
 
@@ -98,7 +107,7 @@ int main(int argc, char *argv[])
     if (size_a == 0 && size_b > 0)
     {
         puts("Array length zero error!!!");
-        return ARRAY_LENGTH_ZERO_ERROR;
+        return ARRAY_C_LENGTH_ZERO_ERROR;
     }
 
     if (size_a > size_b)
