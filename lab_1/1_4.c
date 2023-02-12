@@ -21,14 +21,14 @@ int main(int argc, char *argv[])
     char str_one[200], str_two[200], str_three[100];
     if (argc != 2)
     {
-        printf("File name not found \n");
+        puts("File name not found");
         return ERROR_INPUT_FILENAME;
     }
 
     start_file = fopen(argv[1], "r");
     if (!start_file)
     {
-        printf("Unable to open the file \n");
+        puts("Unable to open the file");
         return ERROR_OPEN_FILE;
     }
 
