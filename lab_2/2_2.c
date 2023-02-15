@@ -92,7 +92,7 @@ void func_flag_n(char *str, char *res)
             n++;
         }
     }
-    str[n] = '\0';
+    res[n] = '\0';
 }
 
 void func_flag_c(char *str1, char *str2, char *res)
