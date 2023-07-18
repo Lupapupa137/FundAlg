@@ -1,0 +1,2 @@
+[information][18.07.2023 20:32:55] allocate memory to arrey
+[critical][18.07.2023 20:32:55] 123 kek lol

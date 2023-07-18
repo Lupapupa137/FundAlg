@@ -1,0 +1,3 @@
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/_deps/json-subbuild/CMakeFiles/json-populate.dir
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/_deps/json-subbuild/CMakeFiles/edit_cache.dir
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/_deps/json-subbuild/CMakeFiles/rebuild_cache.dir

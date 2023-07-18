@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/project.dir/logger.cpp.o CMakeFiles/project.dir/logger_builder.cpp.o CMakeFiles/project.dir/logger_builder_concrete.cpp.o CMakeFiles/project.dir/logger_concrete.cpp.o CMakeFiles/project.dir/main.cpp.o -o project 

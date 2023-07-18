@@ -1,0 +1,5 @@
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/CMakeFiles/project.dir
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/CMakeFiles/edit_cache.dir
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/CMakeFiles/rebuild_cache.dir
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/_deps/json-build/CMakeFiles/edit_cache.dir
+/mnt/d/education/institute/Labs/fund_anal_4sem/Laba_5/logger/_deps/json-build/CMakeFiles/rebuild_cache.dir
