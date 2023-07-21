@@ -1,0 +1,3 @@
+/mnt/d/education/institute/Labs/FundAlg/Laba_5/Task_2/_deps/json-subbuild/CMakeFiles/json-populate.dir
+/mnt/d/education/institute/Labs/FundAlg/Laba_5/Task_2/_deps/json-subbuild/CMakeFiles/edit_cache.dir
+/mnt/d/education/institute/Labs/FundAlg/Laba_5/Task_2/_deps/json-subbuild/CMakeFiles/rebuild_cache.dir
