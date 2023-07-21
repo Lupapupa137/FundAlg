@@ -5,6 +5,7 @@
 #include "../logger/logger_concrete.h"
 #include "../logger/logger_builder.h"
 #include "../logger/logger_builder_concrete.h"
+
 int main()
 {
     logger_builder* builder = new logger_builder_concrete();
@@ -27,5 +28,9 @@ int main()
 
     allocator->deallocate(a);
     allocator->deallocate(str);
+
+    delete allocator;
+    delete log;
+    delete builder;
 
 }
